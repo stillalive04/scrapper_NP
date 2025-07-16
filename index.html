@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Job Posting Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔍 US Job Posting Tracker</h1>
+            <p>Real-time job tracking across all 3,144+ US counties, Twitter, and LinkedIn</p>
+        <p class="enhanced-coverage">✨ Enhanced discovery system covers every county in America</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-controls">
+                <select id="jobType" class="select-input">
+                    <option value="">All Job Types</option>
+                    <option value="marketing-analyst">Marketing Analyst</option>
+                    <option value="seo">SEO Specialist</option>
+                    <option value="devops">DevOps Engineer</option>
+                    <option value="ml-engineer">ML Engineer</option>
+                    <option value="tableau-developer">Tableau Developer</option>
+                    <option value="data-analyst">Data Analyst</option>
+                    <option value="business-analyst">Business Analyst</option>
+                    <option value="sde">Software Development Engineer</option>
+                </select>
+                
+                <select id="source" class="select-input">
+                    <option value="">All Sources</option>
+                    <option value="newspaper">Newspapers</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="linkedin">LinkedIn</option>
+                </select>
+                
+                <input type="text" id="location" placeholder="Enter city, state, or county" class="text-input">
+                
+                <button id="searchBtn" class="search-btn">Search Jobs</button>
+                <button id="enhancedSearchBtn" class="enhanced-btn">🚀 COMPREHENSIVE All-Media Search</button>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalJobs">0</div>
+                    <div class="stat-label">Total Jobs Found</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="newspaperJobs">0</div>
+                    <div class="stat-label">Newspaper Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="twitterJobs">0</div>
+                    <div class="stat-label">Twitter Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="linkedinJobs">0</div>
+                    <div class="stat-label">LinkedIn Posts</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="results-header">
+                <h2>Job Postings</h2>
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>Searching across sources...</span>
+                </div>
+            </div>
+            <div id="jobResults" class="job-results">
+                <!-- Job results will be populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 US Job Posting Tracker. Covering 3,144+ counties nationwide.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
