@@ -20,24 +20,24 @@ npm start
 
 ## Features
 
-### **Real-Time Data Sources**
-- 📰 **Comprehensive Newspaper Scraping**: 53+ major US newspapers job sections
+Real-Time Data Sources
+Comprehensive Newspaper Scraping**: 53+ major US newspapers job sections
 - 🎯 **Smart Job Filtering**: Marketing, SEO, DevOps, ML Engineer, Data Analyst, and more
 - 🌍 **Nationwide Coverage**: All 3,144+ US counties with county-level attribution
 
-### **Job Categories Tracked**
+Job Categories Tracked
 - Marketing Analyst, SEO Specialist, DevOps Engineer
 - ML Engineer, Tableau Developer, Data Analyst  
 - Business Analyst, Software Development Engineer (SDE)
 - And many more job types
 
-### **Smart Search & Filtering**
+Smart Search & Filtering
 - Filter by job type, source, and geographic location
 - Real-time statistics and live counters
 - Auto-refresh every 5 minutes for latest postings
 - County-level job attribution and filtering
 
-### **Geographic Coverage**
+Geographic Coverage
 - **3,144+ US Counties**: Comprehensive nationwide coverage
 - **National Newspapers**: USA Today, Wall Street Journal, New York Times, Washington Post
 - **State & Regional Papers**: Major papers from all 50 states
@@ -78,7 +78,7 @@ Edit `config.js` to customize:
 - **Refresh Intervals**: Auto-update frequency
 - **Cache Settings**: Data caching duration
 
-## 📊 Real-Time Features
+Real-Time Features
 
 - **Automatic Refresh**: Jobs update every 5 minutes
 - **Live Statistics**: Real-time counters by source
@@ -86,7 +86,7 @@ Edit `config.js` to customize:
 - **Rate Limiting**: Respectful scraping with delays
 - **Error Handling**: Graceful fallbacks and notifications
 
-## 🌐 API Endpoints
+API Endpoints
 
 - `GET /api/jobs/search?jobType=&source=&location=` - Search jobs
 - `GET /api/jobs/stats` - Get live statistics  
