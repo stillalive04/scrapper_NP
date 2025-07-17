@@ -1,8 +1,8 @@
-# 🔍 US Job Posting Tracker
+#  US Job Posting Tracker
 
 **Real-time job posting tracker** that automatically scrapes job opportunities from newspapers across the United States covering 3,144+ counties. No login required, no database needed - just pure real-time job data.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Clone the repository
@@ -18,7 +18,7 @@ npm start
 # Open http://localhost:3001 in your browser
 ```
 
-## ✨ Features
+## Features
 
 ### **Real-Time Data Sources**
 - 📰 **Comprehensive Newspaper Scraping**: 53+ major US newspapers job sections
@@ -43,7 +43,7 @@ npm start
 - **State & Regional Papers**: Major papers from all 50 states
 - **County Newspapers**: Local papers for detailed coverage
 
-## 🛠️ Technical Stack
+##  Tech Stack
 
 - **Backend**: Node.js, Express.js
 - **Scraping**: Cheerio, Axios for web scraping
@@ -54,18 +54,18 @@ npm start
 ## 📁 Project Structure
 
 ```
-├── server.js                    # Main Node.js server
-├── config.js                    # Configuration settings
-├── package.json                 # Dependencies and scripts
-├── index.html                   # Frontend dashboard
-├── styles.css                   # UI styling
-├── script.js                    # Frontend JavaScript
-├── comprehensive-newspapers.js  # Newspaper database
-├── enhanced-county-discovery.js # County discovery logic
-├── county-newspapers.js         # County newspaper mappings
-├── all-counties-database.js     # Complete US counties database
-├── newspaper-discovery.js       # Newspaper discovery utilities
-└── README.md                    # This file
+├── server.js                       
+├── config.js                    
+├── package.json                 
+├── index.html                  
+├── styles.css                  
+├── script.js                    
+├── comprehensive-newspapers.js  
+├── enhanced-county-discovery.js 
+├── county-newspapers.js         
+├── all-counties-database.js    
+├── newspaper-discovery.js      
+└── README.md                    
 ```
 
 ## 🔧 Configuration
@@ -92,30 +92,30 @@ Edit `config.js` to customize:
 - `GET /api/jobs/stats` - Get live statistics  
 - `GET /api/health` - Server health check
 
-## 📈 Performance
+Performance
 
 - **Concurrent Scraping**: Multiple sources scraped in parallel
 - **Smart Caching**: Reduces requests and improves speed
 - **Rate Limiting**: Prevents server overload
 - **Efficient Parsing**: Optimized DOM selection and processing
 
-## 🎯 Use Cases
+Use Cases
 
 - **Job Seekers**: Find latest opportunities across multiple sources
 - **Recruiters**: Monitor job market trends and competition
 - **Researchers**: Analyze job posting patterns and geographic distribution
 - **Businesses**: Track hiring activity in specific industries/locations
 
-## 🔐 Security & Ethics
+Security & Ethics
 
 - **Respectful Scraping**: Rate limiting and delays between requests
 - **No Personal Data**: Only processes public job postings
 - **CORS Protection**: Secure cross-origin requests
 - **Error Handling**: Graceful degradation when sources are unavailable
 
-## 🚨 Troubleshooting
+Troubleshooting
 
-### Common Issues
+Common Issues
 
 1. **Port Already in Use**
    ```bash
@@ -136,30 +136,21 @@ Edit `config.js` to customize:
 ### Console Logs
 
 The server provides detailed logging:
-- ✅ Successful job scraping
-- ⚠️ Warnings for unavailable sources
-- ❌ Error messages with details
-- 📊 Statistics and counters
+Successful job scraping
+Warnings for unavailable sources
+Error messages with details
+Statistics and counters
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
+License
 
 MIT License - Free for personal and commercial use.
 
-## 🙏 Acknowledgments
+Acknowledgments
 
 - Built with Node.js and Express
 - Web scraping powered by Cheerio and Axios
 - Comprehensive US newspaper database
 - Real-time job market insights
 
----
 
 **Ready to start?** Run `npm start` and open http://localhost:3001 to begin tracking jobs across the US! 
